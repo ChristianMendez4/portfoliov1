@@ -1,0 +1,256 @@
+/*POLICES DE LA PAGE*/
+
+
+@font-face {
+	font-family:'saturday_bright';
+	src: url('saturday_bright.woff')format('woff'),
+	 url('saturday_bright.ttf') format('truetype')
+	 url('saturday_bright.eot') format('eot')
+
+}
+/*HEADER DE LA PAGE*/
+.nav_menu{
+	flex-direction: row-reverse;
+	margin-bottom: 20px;
+}
+
+
+header{
+	background-color: #181818;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+
+ul{
+	list-style-type: none;
+	margin:0px ;
+	padding:0px;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li{
+	float: right;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+@media screen and (max-height: 500px){
+	.nav_menu{
+	flex-direction: row;
+	width: 95%;
+
+}}
+/*change the color link*/
+li a:hover{
+	background-color: #111;
+
+}
+
+
+/*BODY PORTFOLIO*/
+h1{
+	font-family: 'cursive';
+	color: white;
+}
+
+h2{
+	font-family: cursive,Times New Roman,serif,sans-serif, Verdana;
+	font-size: 1,8em;
+	color: blue;
+}
+
+/*FOND D'ECRAN SITE*/
+body{
+
+	background-image: url("gif-images/site2.jpg");
+	background-size: 100%;
+
+	background-attachment: fixed;
+}
+
+/*Boxes page accueil*/
+
+section#boxes .texte-presentation1{ /*Celui-ci sert aussi pour les autres pages du site*/
+	max-width: 1250px;
+	margin: 0px auto;
+	margin-top: 75px;
+	padding-top: 10px;
+	text-align: center;
+	background-color:  rgba(245, 245, 245, 0);
+	color: white;
+	font-size: 1.2em;
+	padding: 20px 25px;
+	border-radius: 15px;
+	box-sizing: border-box ;
+	box-shadow: 0px 10px 50px -10px black;
+}
+
+section#boxes .texte-presentation1 img {
+    position: absolute;
+    top: 1.1em;
+    left: 0;
+	width: 125px;
+}
+
+
+
+section#boxes .texte-presentation2{ /*Celui-ci sert aussi pour les autres pages du site (Télécharger les procedures)*/
+	max-width: 1250px;
+	margin: 0px auto;
+	margin-top: 10px;
+	text-align: center;
+	background-color:  rgba(245, 245, 245, 0);
+	color: white;
+	font-size: 1.2em;
+	padding: 10px 25px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	box-shadow: 0px 10px 50px -10px black;
+}
+
+
+/*Box pour option bts*/ 
+
+section#presentation-bts .optiongen{
+	max-width: 1250px;
+	margin: 0px auto;
+	margin-top: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	background-color:  rgba(245, 245, 245, 0);
+	color: white;
+	font-size: 1.2em;
+	padding: 10px 25px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	box-shadow: 0px 10px 50px -10px black;
+}
+
+
+/*BAS DE LA PAGE*/
+
+
+/*Page Contact*/
+section#contact {
+	padding: 50px 15px;
+}
+
+section#contact .container {
+	max-width: 1000px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(245, 245, 245, 0.728);
+	padding: 20px 25px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	box-shadow: 0px 10px 50px -10px black;
+}
+
+/*TITRE DE LA PAGE CONTACT (BOX)*/
+section#contact .container .title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+section#contact .container .title h2 {
+	font-size: 1em;
+	Color: black
+}
+
+section#contact .container .title h1 {
+	font-size: 2.2em;
+	Color: black
+}
+
+/* BOX mettre en place les lignes*/
+
+section#contact .container form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 600px;
+}
+
+section#contact .container form input {
+	width: 47%;
+	margin: 10px 0px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid blue;
+}
+
+section#contact .container form textarea{
+	width: 100%;
+	margin-bottom: 20px;
+	margin: 10px 0;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid blue;
+	resize: none;
+	height: 135px;
+}
+
+section#contact .container button{
+	width: 20%;
+	height: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin: auto;
+}
+
+/* line blue under form required*/
+section#contact .container form input:hover {
+	border-bottom: 2px solid cyan;
+}
+
+section#contact .container form textarea:hover {
+	border-bottom: 2px solid cyan;
+}
+
+/*Animation button*/
+
+section#contact .container form button:hover{
+	transform: translateY(5px);
+	box-shadow: 0px 10px 50px -10px blue;
+	transition: 0.2s;
+}
+
+/*Mouvement de l'onglet page (pour que ça se modifie selon la taille)*/
+
+@media screen and (max-width: 500px){
+section#contact .container .form {
+	flex-direction: column;
+	width: 95%;
+}}
+
+
+
+
+/*PAGE STAGES/
+
+
+
+
+
+/*PAGE Veille Technologique*/
